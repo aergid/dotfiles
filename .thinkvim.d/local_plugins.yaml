@@ -1,0 +1,15 @@
+- repo: derekwyatt/vim-scala
+- repo: majutsushi/tagbar
+- repo: vim-airline/vim-airline
+- repo: vim-airline/vim-airline-themes
+- repo: saltstack/salt-vim
+- repo: Glench/Vim-Jinja2-Syntax
+- repo: masukomi/vim-markdown-folding
+- repo: godlygeek/tabular
+- repo: tpope/vim-surround
+- repo: plasticboy/vim-markdown
+- repo: scrooloose/nerdcommenter
+- repo: KKPMW/vim-sendtowindow
+- repo: MTDL9/vim-log-highlighting
+- repo: christoomey/vim-tmux-navigator
+- repo: Lokaltog/vim-easymotion
