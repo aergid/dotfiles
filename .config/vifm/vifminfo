@@ -1,0 +1,394 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/ksanteen/
+	..
+1573678891
+'b
+	/home/ksanteen/bin/
+	..
+1573678891
+'h
+	/home/ksanteen/
+	..
+1573678891
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m228
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes/shell
+	select.json
+5
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes
+	tmux
+4
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes/tmux
+	default.json
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes
+	vim
+5
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes/vim
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes
+	vim
+5
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes/vim
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes
+	wm
+6
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes/wm
+	default.json
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes
+	ipython
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes/ipython
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files/themes
+	ipython
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/config_files
+	themes
+2
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/renderers
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/segments
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/selectors
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/matchers
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/listers
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/lint
+	..
+0
+d/home/ksanteen/.certs
+	old
+1
+d/home/ksanteen/.certs/old
+	..
+0
+d/home/ksanteen/.certs
+	..
+0
+d/home/ksanteen
+	..
+0
+d/home
+	ksanteen
+1
+d/home/ksanteen
+	Templates
+8
+d/home/ksanteen/Templates
+	..
+0
+d/home/ksanteen
+	arco-bspwm
+11
+d/home/ksanteen/arco-bspwm
+	..
+0
+d/home/ksanteen
+	..
+0
+d/home
+	..
+0
+d/
+	bin
+0
+d/mnt
+	Vault
+2
+d/mnt/Vault
+	Calibre
+1
+d/mnt/Vault/Calibre
+	..
+0
+d/mnt/Vault
+	app
+8
+d/mnt/Vault/app
+	..
+0
+d/mnt/Vault
+	..
+0
+d/mnt
+	Dome
+1
+d/mnt/Dome
+	Я, снова я и мама Me, Myself and Mum Les garcons et Guillaume, a table! (Гийом Гальенн Guillaume Gallien) [2013, Франция, Бе [rutracker-4680402].torrent
+55
+d/home/ksanteen
+	..
+0
+d/home
+	ksanteen
+1
+d/home/ksanteen
+	Yandex
+10
+d/home/ksanteen/Yandex
+	..
+0
+d/home/ksanteen
+	Public
+7
+d/home/ksanteen/Public
+	..
+0
+d/home/ksanteen
+	arco-bspwm
+11
+d/home/ksanteen/arco-bspwm
+	ArchWay
+3
+d/home/ksanteen/arco-bspwm/ArchWay
+	..
+0
+d/home/ksanteen/arco-bspwm
+	ArchWay
+3
+d/home/ksanteen/arco-bspwm/ArchWay
+	20-trust-key-v4.sh
+2
+d/home/ksanteen/arco-bspwm
+	ArchWay
+3
+d/home/ksanteen
+	arco-bspwm
+11
+d/home
+	ksanteen
+1
+d/home/ksanteen/.config/powerline
+	colorschemes
+1
+d/home/ksanteen/.config/powerline/colorschemes
+	default.jsonh
+1
+d/home/ksanteen/.config/powerline/colorschemes/default.jsonh
+	..
+0
+d/home/ksanteen/.config/powerline/colorschemes
+	default.json
+1
+d/home/ksanteen/.config/powerline
+	themes
+2
+d/home/ksanteen/.config/powerline/themes
+	shell
+1
+d/home/ksanteen/.config/powerline/themes/shell
+	__main__.json
+1
+d/home/ksanteen/.config/powerline/themes
+	shell
+1
+d/home/ksanteen/.config/powerline
+	themes
+2
+d/home/ksanteen/.config
+	powerline
+26
+d/home/ksanteen/.local/lib/python3.8/site-packages
+	powerline_gitstatus
+2
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline_gitstatus
+	segments.py
+3
+d/home/ksanteen/.local/lib/python3.8/site-packages
+	powerline
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	bindings
+2
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/bindings
+	__pycache__
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	lint
+7
+d/home/ksanteen/.local/lib/python3.8/site-packages
+	powerline
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	lib
+6
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/lib
+	..
+0
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	bindings
+2
+d/home/ksanteen/.local/lib/python3.8/site-packages
+	powerline
+1
+d/home/ksanteen/.local/lib/python3.8
+	site-packages
+1
+d/home/ksanteen/.local/lib
+	python3.8
+1
+d/home/ksanteen/.local/lib/python3.8
+	site-packages
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages
+	powerline
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	dist
+5
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline/dist
+	systemd
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	dist
+5
+d/home/ksanteen/.local/lib/python3.8/site-packages
+	powerline
+1
+d/home/ksanteen/.local/lib/python3.8/site-packages/powerline
+	matchers
+9
+d/home/ksanteen/Development/mocker-git
+	..
+0
+d/home/ksanteen/Development
+	mocker-git
+2
+d/mnt/Vault/Programming/mocker-git
+	mocker
+1
+d/mnt/Vault/Programming/mocker-git/mocker
+	commands
+2
+d/mnt/Vault/Programming/mocker-git/mocker/commands
+	run.py
+5
+d/sys/fs/cgroup
+	cpu
+2
+d/sys/fs/cgroup/cpu
+	ksanteen
+1
+d/sys/fs/cgroup/cpu/ksanteen
+	notify_on_release
+15
+d/sys/fs/cgroup/cpu
+	ksanteen
+1
+d/sys/fs/cgroup
+	memory
+9
+d/sys/fs/cgroup/memory
+	..
+0
+d/sys/fs/cgroup
+	net_cls
+10
+d/sys/fs/cgroup/net_cls
+	root
+2
+d/sys/fs/cgroup/net_cls/root
+	..
+0
+d/sys/fs/cgroup/net_cls
+	ksanteen
+1
+d/sys/fs/cgroup/net_cls/ksanteen
+	..
+0
+d/sys/fs/cgroup/net_cls
+	ksanteen
+1
+d
+
+# Right window history (oldest to newest):
+D/home/ksanteen/.certs
+	..
+0
+D/home/ksanteen
+	Development
+2
+D/home/ksanteen/Development
+	mocker-git
+2
+D/home/ksanteen/Development/mocker-git
+	mocker
+1
+D/home/ksanteen/Development/mocker-git/mocker
+	commands
+2
+D/home/ksanteen/Development/mocker-git/mocker/commands
+	run.py
+7
+D
+
+# Command line history (oldest to newest):
+:set showtabline
+:help
+:filter H
+:classify
+:set classify
+:h
+:execute %
+:c
+:d
+:qa
+:cd 
+:q
+
+# Search history (oldest to newest):
+/Te
+/910
+/deve
+
+# Prompt history (oldest to newest):
+p000-use-all-cores-makepkg-conf-v3.sh
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/mnt/Vault/Programming/mocker-git/mocker/commands/run.py
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/ksanteen/.local/share/vifm/Trash/000_default.jsonh
+	/home/ksanteen/.config/powerline/colorschemes/default.jsonh
+
+# State:
+f
+i1
+[.1
+[F
+FH
+I1
+].1
+]F
+s0
