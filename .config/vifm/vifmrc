@@ -4,10 +4,12 @@ colorscheme gruvbox
 fileview */ tree %c
 
 " Hidden dirs
-fileview *./ tree %c
+fileview .*/ tree %c
 
 " .. Parent dir
 fileview ../ tree %c -L 1
+
+fileviewer * env -uCOLORTERM bat --color always --wrap never --pager never %c -p
 
 " ==============================================================================
 " vim: filetype=vifm :
