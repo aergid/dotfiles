@@ -1,3 +1,15 @@
+colorscheme gruvbox
+
+" Normal dirs
+fileview */ tree %c
+
+" Hidden dirs
+fileview *./ tree %c
+
+" .. Parent dir
+fileview ../ tree %c -L 1
+
+" ==============================================================================
 " vim: filetype=vifm :
 " Sample configuration file for vifm (last updated: 2 June, 2019)
 " You can edit this file by hand.
@@ -61,10 +73,6 @@ set vimhelp
 " press return on the file name set this.
 
 set norunexec
-
-" Selected color scheme
-
-colorscheme Default
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -481,3 +489,7 @@ nnoremap <f8> :delete<cr>
 "     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
+" file types
+" various file names
+
+source ~/.config/vifm/devicons.vifm
