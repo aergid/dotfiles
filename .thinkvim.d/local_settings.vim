@@ -54,6 +54,9 @@ nnoremap <Leader>w<Leader>w :e ~/ownCloud/wikis/vimwiki/diary/`date +\%Y-\%m-\%d
 autocmd BufEnter, *.md nnoremap <Leader>u YpVr-
 autocmd BufEnter, *.md nnoremap <Leader>U YpVr=
 
+set conceallevel=2
+set concealcursor=""
+
 "tabs and spaces
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown,*.wiki} set ft=markdown
 autocmd FileType md,mkd,markdown,wiki setlocal ts=2 sts=2 sw=2 expandtab

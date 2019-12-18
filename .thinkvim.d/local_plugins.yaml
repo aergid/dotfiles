@@ -13,3 +13,4 @@
 - repo: MTDL9/vim-log-highlighting
 - repo: christoomey/vim-tmux-navigator
 - repo: Lokaltog/vim-easymotion
+- repo: sjl/splice.vim
