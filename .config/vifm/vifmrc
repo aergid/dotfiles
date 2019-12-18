@@ -9,7 +9,18 @@ fileview .*/ tree %c
 " .. Parent dir
 fileview ../ tree %c -L 1
 
-fileviewer * env -uCOLORTERM bat --color always --wrap never --pager never %c -p
+fileviewer *.pdf
+  \ pdftotext %c -
+
+fileviewer *.png,*.jpeg,*.jpg
+ \ img2txt %c 
+
+fileviewer *.tar,*.tar.gz,*.tgz
+ \ tar -tvf %c
+
+fileviewer *.html
+ \ w3m %c
+
 
 " ==============================================================================
 " vim: filetype=vifm :
@@ -495,3 +506,4 @@ nnoremap <f8> :delete<cr>
 " various file names
 
 source ~/.config/vifm/devicons.vifm
+fileviewer * env -uCOLORTERM bat --color always --wrap never --pager never %c -p
