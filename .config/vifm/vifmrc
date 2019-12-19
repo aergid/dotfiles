@@ -1,4 +1,4 @@
-colorscheme gruvbox
+colorscheme lucius
 
 " Normal dirs
 fileview */ tree %c

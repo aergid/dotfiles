@@ -1,6 +1,8 @@
 #########################
 # SUPER + FUNCTION KEYS #
 #########################
+F12
+    slock
 
 # Vivaldi
 super + F1
@@ -80,7 +82,7 @@ super + r
 
 #Urxvt
 super + t
-    termite
+    st
 
 #Pavucontrol
 super + v
@@ -104,7 +106,7 @@ super + Escape
 
 #Terminal emulator
 super + Return
-	termite
+	st
 
 #Keyboard dependent
 #Terminal emulator
@@ -200,7 +202,7 @@ ctrl + alt + s
 
 #Urxvt
 ctrl + alt + t
-     termite
+     st
 
 #Rofi theme selector
 ctrl + alt + r
@@ -220,7 +222,7 @@ ctrl + alt + w
 
 #Urxvt
 ctrl + alt + Return
-     termite
+     st
 
 #Keyboard dependent
 #Urxvt
