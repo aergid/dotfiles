@@ -15,6 +15,7 @@ function run {
 
 $HOME/.config/polybar/launch.sh &
 
+wmname LG3D &
 #change your keyboard if you need it
 #setxkbmap -layout be
 
@@ -24,17 +25,21 @@ feh --bg-scale ~/.config/bspwm/wall.png &
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
 xsetroot -cursor_name left_ptr &
+xrdb -load .Xdefaults &
 sxhkd &
 
-conky -c $HOME/.config/bspwm/system-overview &
-run variety &
+#conky -c $HOME/.config/bspwm/system-overview &
+#run variety &
 run nm-applet &
-run pamac-tray &
-run VBoxClient-all &
-run xfce4-power-manager &
-numlockx on &
-blueberry-tray &
-compton --config $HOME/.config/bspwm/compton.conf &
+run stalometry &
+run brave-browser &
+run telegram &
+#run pamac-tray &
+#run VBoxClient-all &
+#run xfce4-power-manager &
+#numlockx on &
+#blueberry-tray &
+#compton --config $HOME/.config/bspwm/compton.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #nitrogen --restore &
