@@ -31,7 +31,7 @@ sxhkd &
 #conky -c $HOME/.config/bspwm/system-overview &
 #run variety &
 run nm-applet &
-run stalometry &
+run stalonetray &
 run brave-browser &
 run telegram &
 #run pamac-tray &

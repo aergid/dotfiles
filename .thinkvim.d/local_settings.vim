@@ -4,7 +4,8 @@ command! -nargs=0 MetalsConnect :call CocRequestAsync('metals', 'workspace/execu
 
 " air-line
 let g:airline_powerline_fonts = 1
-let g:airline_extensions = ['branch', 'hunks', 'coc', 'tabline']
+let g:airline_extensions = ['branch', 'coc', 'tabline']
+"let g:airline_extensions = ['branch', 'hunks', 'coc', 'tabline']
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
@@ -60,7 +61,7 @@ command! -nargs=+ -complete=command TabMessage call TabMessage(<q-args>)
 
 "wiki
 "Open today's diary page
-nnoremap <Leader>w<Leader>w :e ~/ownCloud/wikis/vimwiki/diary/`date +\%Y-\%m-\%d`.md<CR>
+nnoremap <Leader>w<Leader>w :e ~/vimwiki/diary/`date +\%Y-\%m-\%d`.md<CR>
 
 " Abbreviation to insert the current date when typings "cdate"
 :iab cdate <c-r>=strftime("%Y-%m-%d")<CR>
