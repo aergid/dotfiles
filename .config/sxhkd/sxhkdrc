@@ -472,7 +472,7 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 
 # set the window state
 super + space
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+	bspc node -t {tiled,floating,fullscreen}
 
 # Focus parent/brother/first/second for preselection
 super + ctrl + {e,r,t,y}

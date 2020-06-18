@@ -1,6 +1,7 @@
 ! для применения настроек в текущей сессии используйте `xrdb -load ~/.Xresources`
 
 !Xft.dpi: 180
+Xft.dpi: 96
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull

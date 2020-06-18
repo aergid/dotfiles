@@ -13,11 +13,14 @@ function run {
 #xrandr --output LVDS1 --mode 1366x768 --output DP3 --mode 1920x1080 --right-of LVDS1
 #xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
+eval "$(ssh-agent)"
+
 $HOME/.config/polybar/launch.sh &
 
 wmname LG3D &
 #change your keyboard if you need it
 #setxkbmap -layout be
+setxkbmap -model pc105 -layout us,ru -variant qwerty -option grp:caps_toggle
 
 #Some ways to set your wallpaper besides variety or nitrogen
 feh --bg-scale ~/.config/bspwm/wall.png &
@@ -25,20 +28,16 @@ feh --bg-scale ~/.config/bspwm/wall.png &
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
 xsetroot -cursor_name left_ptr &
-xrdb -load .Xdefaults &
 sxhkd &
 
-#conky -c $HOME/.config/bspwm/system-overview &
-#run variety &
+conky -c $HOME/.config/bspwm/system-overview &
+run variety &
 run nm-applet &
-run stalonetray &
-run brave-browser &
-run telegram &
-#run pamac-tray &
+run pamac-tray &
 #run VBoxClient-all &
-#run xfce4-power-manager &
-#numlockx on &
-#blueberry-tray &
+run xfce4-power-manager &
+numlockx on &
+blueberry-tray &
 #compton --config $HOME/.config/bspwm/compton.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
