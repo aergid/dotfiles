@@ -80,7 +80,6 @@ plugins=(
   shrink-path
   themes #lstheme theme at the go
 )
-export TERM=xterm-256color
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -112,6 +111,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/ksanteen/dotfiles --work-tree=/home/ksanteen'
+
+fay() {
+  yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S
+}
+
+fayl() {
+  pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+}
+
 prompt_svn() {
     local rev branch
     if in_svn; then
@@ -145,8 +153,28 @@ build_prompt() {
     prompt_end
 }
 
+ssh() {
+local code=0
+local ancien
+ancien=$(tmux display-message -p '#W')
 
-source /home/ksanteen/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+if [ $TERM = tmux -o $TERM = screen-256color ]; then
+    tmux set-option allow-rename off 1>/dev/null
+    tmux rename-window "$(echo $* | cut -d . -f 1)"
+    command ssh "$@"
+    code=$?
+    tmux set-option allow-rename on 1>/dev/null
+else
+    command ssh "$@"
+    code=$?
+fi
+tmux rename-window $ancien
+return $code
+}
+
+
+powerline-daemon -q
+source /home/$USER/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 neofetch
 
@@ -159,6 +187,7 @@ bindkey -M vicmd '/' history-incremental-search-forward
 # Beginning search with arrow keys
 bindkey "^[OA" up-line-or-beginning-search
 bindkey "^[OB" down-line-or-beginning-search
+
 # open Vim
 bindkey "^V" edit-command-line
 

@@ -20,7 +20,12 @@ $HOME/.config/polybar/launch.sh &
 wmname LG3D &
 #change your keyboard if you need it
 #setxkbmap -layout be
-setxkbmap -model pc105 -layout us,ru -variant qwerty -option grp:caps_toggle
+setxkbmap -model pc105 -layout us,ru -variant qwerty -option grp:alt_shift_toggle
+
+#let Caps be Control
+xmodmap -e 'keycode 66 = Control_L'
+xmodmap -e 'clear Lock'
+xmodmap -e 'add Control = Control_L'
 
 #Some ways to set your wallpaper besides variety or nitrogen
 feh --bg-scale ~/.config/bspwm/wall.png &
