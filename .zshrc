@@ -153,26 +153,6 @@ build_prompt() {
     prompt_end
 }
 
-ssh() {
-local code=0
-local ancien
-ancien=$(tmux display-message -p '#W')
-
-if [ $TERM = tmux -o $TERM = screen-256color ]; then
-    tmux set-option allow-rename off 1>/dev/null
-    tmux rename-window "$(echo $* | cut -d . -f 1)"
-    command ssh "$@"
-    code=$?
-    tmux set-option allow-rename on 1>/dev/null
-else
-    command ssh "$@"
-    code=$?
-fi
-tmux rename-window $ancien
-return $code
-}
-
-
 powerline-daemon -q
 source /home/$USER/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -187,6 +167,8 @@ bindkey -M vicmd '/' history-incremental-search-forward
 # Beginning search with arrow keys
 bindkey "^[OA" up-line-or-beginning-search
 bindkey "^[OB" down-line-or-beginning-search
+bindkey "^P" up-line-or-beginning-search
+bindkey "^N" down-line-or-beginning-search
 
 # open Vim
 bindkey "^V" edit-command-line
