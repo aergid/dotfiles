@@ -1,0 +1,10 @@
+# https://github.com/jonas/tig/blob/master/doc/tigrc.5.adoc#color-command
+# https://github.com/cbertoldi/dotfiles/blob/master/tigrc.symlink
+# *color* 'area' 'fgcolor' 'bgcolor' '[attributes]'
+
+# general
+color   default                 15      235
+color   cursor                  15      241
+color   title-focus             16     208
+color   title-blur              16     208
+
