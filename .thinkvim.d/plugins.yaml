@@ -1,0 +1,75 @@
+# Disabling standart distribution ==============================================
+- { repo: hardcoreplayers/spaceline.vim, if: 0 }
+- { repo: hardcoreplayers/vim-buffet, if: 0 }
+
+# Themes =======================================================================
+#- { repo: lifepillar/vim-gruvbox8 }
+- { repo: gruvbox-community/gruvbox }
+
+
+# UI ===========================================================================
+- { repo: itchyny/lightline.vim, on_event: [ BufReadPre,BufNew ] }
+- { repo: mengelbrecht/lightline-bufferline, on_event: [ BufReadPre,BufNew ] }
+- { repo: tpope/vim-surround, on_map: { n: ['ys', 'ds', 'cs'], v: 'S' } }
+
+# Navigation
+- { repo: christoomey/vim-tmux-navigator,
+    on_map: { nt: ['<C-h>','<C-j>','<C-k>','<C-l>','<C-\\>'] },
+    hook_source: source $THINKVIM/configs/vim-tmux.vim
+  }
+
+  #Plug 'tpope/vim-fugitive'
+  #Plug 'tpope/vim-rhubarb'
+  #Plug 'junegunn/gv.vim'
+
+
+# Languages ====================================================================
+
+## Markdown
+- { repo: godlygeek/tabular }
+- { repo: dkarter/bullets.vim }
+
+- repo: plasticboy/vim-markdown
+  on_ft: markdown
+  hook_add: source $THINKVIM/configs/markdown.vim
+
+- repo: rhysd/vim-gfm-syntax
+  depends: vim-markdown
+  on_ft: markdown
+  hook_add: source $THINKVIM/configs/markdown.vim
+
+- repo: iamcco/markdown-preview.nvim
+  on_ft: [markdown,pandoc.markdown,rmd]
+  build: 'sh -c "cd app & yarn install"'
+  hook_source: source $THINKVIM/configs/markdown.vim
+
+## Toml support
+- { repo: cespare/vim-toml, on_ft: toml }
+
+## Python support
+## LanguageServerProtocol used by coc-python
+## default of coc-python is mpls you can choose pyls
+- { repo: vim-python/python-syntax,on_ft: python }
+- { repo: Vimjas/vim-python-pep8-indent, on_ft: python }
+- { repo: vim-scripts/python_match.vim, on_ft: python }
+- { repo: raimon49/requirements.txt.vim, on_ft: requirements }
+
+## Haskell support
+## LanguageServerProtocol used by https://github.com/haskell/haskell-ide-engine
+- { repo: neovimhaskell/haskell-vim,on_ft: haskell }
+
+## Scala support
+## LanguageServerProtocol used by coc-scala
+- { repo: derekwyatt/vim-scala,on_ft: scala }
+
+## json support
+## LanguageServerProtocol for json by thinkvim default
+- { repo: kevinoid/vim-jsonc, on_ft: json }
+
+## shell zsh support
+## LanguageServerProtocol used by https://github.com/bash-lsp/bash-language-server
+- { repo: arzg/vim-sh,on_ft: [ sh,zsh ]}
+
+## C family support https://github.com/arakashic/chromatica.nvim
+## LanguageServerProtocol used by ccls
+- { repo: arakashic/chromatica.nvim,on_ft: [ c,cpp ]}
