@@ -12,7 +12,7 @@ let g:thinkvim_disable_mappings = 0
 
 "call utils#source_file($THINKVIM,'configs/vim-tmux.vim')
 
-source $HOME/.thinkvim.d/keys/mappings.vim
+source $THINKVIM/keys/mappings.vim
 "source $HOME/.thinkvim.d/themes/gruvbox.vim
 "source $HOME/.thinkvim.d/themes/airline.vim
 "source $HOME/.thinkvim.d/plug-config/closetags.vim

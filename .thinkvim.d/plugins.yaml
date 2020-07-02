@@ -1,10 +1,15 @@
 # Disabling standart distribution ==============================================
 - { repo: hardcoreplayers/spaceline.vim, if: 0 }
 - { repo: hardcoreplayers/vim-buffet, if: 0 }
+- { repo: jreybert/vimagit, if: 0 }
+- { repo: rhysd/committia.vim, if: 0 }
+- { repo: mattn/emmet-vim, if: 0 }
+
+
 
 # Themes =======================================================================
-#- { repo: lifepillar/vim-gruvbox8 }
-- { repo: gruvbox-community/gruvbox }
+- { repo: lifepillar/vim-gruvbox8 }
+  #- { repo: gruvbox-community/gruvbox }
 
 
 # UI ===========================================================================
@@ -18,16 +23,28 @@
     hook_source: source $THINKVIM/configs/vim-tmux.vim
   }
 
-  #Plug 'tpope/vim-fugitive'
-  #Plug 'tpope/vim-rhubarb'
-  #Plug 'junegunn/gv.vim'
+- repo: junegunn/gv.vim
+  on_map: { n: [ 'GV', 'GV!' ] }
+  depends: vim-fugitive
+
+- repo: tpope/vim-fugitive
+  on_cmd: [ G, Git, Gfetch, Gpush, Glog, Gclog, Gdiffsplit ]
+  on_source: gv.vim
+  hook_source:
+    augroup user_fugitive_plugin
+      autocmd!
+      autocmd FileType fugitiveblame normal A
+    augroup END
 
 
 # Languages ====================================================================
 
 ## Markdown
-- { repo: godlygeek/tabular }
-- { repo: dkarter/bullets.vim }
+- repo: godlygeek/tabular
+  on_cmd: [ Tabularize ]
+
+- repo: dkarter/bullets.vim
+  on_ft: markdown
 
 - repo: plasticboy/vim-markdown
   on_ft: markdown
