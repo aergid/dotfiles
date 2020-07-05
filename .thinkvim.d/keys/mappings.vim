@@ -3,9 +3,6 @@ let g:maplocalleader = ","
 
 nnoremap Y y$
 
-" g Leader key
-let mapleader=" "
-" let localleader=" "
 nnoremap <Space> <Nop>
 
 " Better indenting

@@ -12,25 +12,23 @@ let g:thinkvim_disable_mappings = 0
 
 "call utils#source_file($THINKVIM,'configs/vim-tmux.vim')
 
-source $THINKVIM/keys/mappings.vim
-"source $HOME/.thinkvim.d/themes/gruvbox.vim
-"source $HOME/.thinkvim.d/themes/airline.vim
-"source $HOME/.thinkvim.d/plug-config/closetags.vim
-"source $HOME/.thinkvim.d/plug-config/coc-git.vim
-"source $HOME/.thinkvim.d/plug-config/coc.vim
-"source $HOME/.thinkvim.d/plug-config/codi.vim
-"source $HOME/.thinkvim.d/plug-config/floaterm.vim
-"source $HOME/.thinkvim.d/plug-config/fzf.vim
-"source $HOME/.thinkvim.d/plug-config/goyo.vim
-"source $HOME/.thinkvim.d/plug-config/indentline.vim
-"source $HOME/.thinkvim.d/plug-config/nerd-commenter.vim
-"source $HOME/.thinkvim.d/plug-config/markdown-preview.vim
-"source $HOME/.thinkvim.d/plug-config/quickscope.vim
-"source $HOME/.thinkvim.d/plug-config/rainbow.vim
-"source $HOME/.thinkvim.d/plug-config/rnvimr.vim
-"source $HOME/.thinkvim.d/plug-config/sneak.vim
-"source $HOME/.thinkvim.d/plug-config/start-screen.vim
-"source $HOME/.thinkvim.d/plug-config/vim-rooter.vim
-"source $HOME/.thinkvim.d/plug-config/vim-tmux.vim
-"source $HOME/.thinkvim.d/plug-config/vim-wiki.vim
-"source $HOME/.thinkvim.d/plug-config/vista.vim
+set textwidth=0     " Text width maximum chars before wrapping
+set expandtab       " Don't expand tabs to spaces
+set tabstop=4       " The number of spaces a tab is
+set shiftwidth=4    " Number of spaces to use in auto(indent)
+
+set timeoutlen=300
+"
+" Remap for destroying trailing whitespace cleanly
+:nnoremap <silent> <F5> :let _save_pos=getpos(".") <Bar>
+    \ :let _s=@/ <Bar>
+    \ :%s/\s\+$//e <Bar>
+    \ :let @/=_s <Bar>
+    \ :nohl <Bar>
+    \ :unlet _s<Bar>
+    \ :call setpos('.', _save_pos)<Bar>
+    \ :unlet _save_pos<CR><CR>
+
+"wiki
+"Open today's diary page
+nnoremap <Leader>w<Leader>w :e ~/YaD/Notes/diary/`date +\%Y-\%m-\%d`.md<CR>

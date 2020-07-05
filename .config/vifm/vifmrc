@@ -388,6 +388,7 @@ filextype */
 " for unknown file types.
 " For *nix:
 " filetype * xdg-open
+filetype * nvr --remote
 " For OS X:
 " filetype * open
 " For Windows:
@@ -415,6 +416,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 " ------------------------------------------------------------------------------
 
 " Sample mappings
+nnoremap ; :
 
 " Start shell in current directory
 nnoremap s :shell<cr>

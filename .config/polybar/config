@@ -16,6 +16,7 @@
 margin-top = 0
 margin-bottom = 0
 
+
 [settings]
 ;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
 throttle-output = 5

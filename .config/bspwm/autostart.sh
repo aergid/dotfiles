@@ -35,10 +35,9 @@ feh --bg-scale ~/.config/bspwm/wall.png &
 xsetroot -cursor_name left_ptr &
 sxhkd &
 
-conky -c $HOME/.config/bspwm/system-overview &
+#conky -c $HOME/.config/bspwm/system-overview &
 run variety &
 run nm-applet &
-run pamac-tray &
 #run VBoxClient-all &
 run xfce4-power-manager &
 numlockx on &
@@ -56,3 +55,4 @@ blueberry-tray &
 #run discord &
 #run spotify &
 #run atom &
+run pamac-tray &

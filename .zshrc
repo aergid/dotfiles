@@ -112,6 +112,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/ksanteen/dotfiles --work-tree=/home/ksanteen'
 
+export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+alias vim='nvr --remote'
+
 fay() {
   yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S
 }

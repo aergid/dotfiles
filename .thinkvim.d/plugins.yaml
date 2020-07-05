@@ -8,13 +8,26 @@
 
 
 # Themes =======================================================================
-- { repo: lifepillar/vim-gruvbox8 }
-  #- { repo: gruvbox-community/gruvbox }
-
+- repo: gruvbox-community/gruvbox
+- repo: drewtempelmeyer/palenight.vim
+- repo: ayu-theme/ayu-vim
+- repo: NLKNguyen/papercolor-theme
+- repo: lifepillar/vim-solarized8
+- repo: joshdick/onedark.vim
+- repo: arcticicestudio/nord-vim
+- repo: rakr/vim-one
+- repo: mhartington/oceanic-next
+- repo: patstockwell/vim-monokai-tasty
+- repo: dracula/vim
+- repo: kristijanhusak/vim-hybrid-material
+- repo: kyoz/purify
+- repo: nanotech/jellybeans.vim
 
 # UI ===========================================================================
-- { repo: itchyny/lightline.vim, on_event: [ BufReadPre,BufNew ] }
-- { repo: mengelbrecht/lightline-bufferline, on_event: [ BufReadPre,BufNew ] }
+- repo: vim-airline/vim-airline
+- repo: vim-airline/vim-airline-themes
+  hook_source: source $THINKVIM/configs/airline.vim
+
 - { repo: tpope/vim-surround, on_map: { n: ['ys', 'ds', 'cs'], v: 'S' } }
 
 # Navigation
