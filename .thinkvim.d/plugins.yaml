@@ -28,6 +28,10 @@
 - repo: vim-airline/vim-airline-themes
   hook_source: source $THINKVIM/configs/airline.vim
 
+- repo: junegunn/fzf.vim
+  hook_source: source $THINKVIM/configs/fzf.vim
+
+
 - { repo: tpope/vim-surround, on_map: { n: ['ys', 'ds', 'cs'], v: 'S' } }
 
 # Navigation
