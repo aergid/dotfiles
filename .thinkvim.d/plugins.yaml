@@ -8,25 +8,25 @@
 
 
 # Themes =======================================================================
-- repo: gruvbox-community/gruvbox
-- repo: drewtempelmeyer/palenight.vim
-- repo: ayu-theme/ayu-vim
-- repo: NLKNguyen/papercolor-theme
-- repo: lifepillar/vim-solarized8
-- repo: joshdick/onedark.vim
-- repo: arcticicestudio/nord-vim
-- repo: rakr/vim-one
-- repo: mhartington/oceanic-next
-- repo: patstockwell/vim-monokai-tasty
-- repo: dracula/vim
-- repo: kristijanhusak/vim-hybrid-material
-- repo: kyoz/purify
-- repo: nanotech/jellybeans.vim
+#- repo: lifepillar/vim-gruvbox8
+# - repo: gruvbox-community/gruvbox
+- repo: sainnhe/gruvbox-material
+  hook_source: source $THINKVIM/configs/gruvbox_material.vim
 
+
+- repo: patstockwell/vim-monokai-tasty
 # UI ===========================================================================
-- repo: vim-airline/vim-airline
-- repo: vim-airline/vim-airline-themes
-  hook_source: source $THINKVIM/configs/airline.vim
+# - repo: vim-airline/vim-airline
+# - repo: vim-airline/vim-airline-themes
+#   hook_source: source $THINKVIM/configs/airline.vim
+
+- repo: itchyny/lightline.vim
+  on_event: [ BufReadPre,BufNew ]
+  hook_source: source $THINKVIM/configs/lightline.vim
+
+- repo: mengelbrecht/lightline-bufferline
+  on_event: [ BufReadPre,BufNew ]
+  depends: lightline.vim
 
 - repo: junegunn/fzf.vim
   hook_source: source $THINKVIM/configs/fzf.vim

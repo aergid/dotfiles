@@ -36,7 +36,7 @@ xsetroot -cursor_name left_ptr &
 sxhkd &
 
 #conky -c $HOME/.config/bspwm/system-overview &
-run variety &
+#run variety &
 run nm-applet &
 #run VBoxClient-all &
 run xfce4-power-manager &
@@ -56,3 +56,4 @@ blueberry-tray &
 #run spotify &
 #run atom &
 run pamac-tray &
+run st tmux &

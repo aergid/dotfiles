@@ -113,7 +113,6 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=/home/ksanteen/dotfiles --work-tree=/home/ksanteen'
 
 export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
-alias vim='nvr --remote'
 
 fay() {
   yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S
@@ -176,4 +175,5 @@ bindkey "^N" down-line-or-beginning-search
 # open Vim
 bindkey "^V" edit-command-line
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh

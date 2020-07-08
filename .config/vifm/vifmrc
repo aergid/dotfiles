@@ -13,7 +13,7 @@ fileviewer *.pdf
   \ pdftotext %c -
 
 fileviewer *.png,*.jpeg,*.jpg
- \ img2txt %c 
+ \ img2txt %c
 
 fileviewer *.tar,*.tar.gz,*.tgz
  \ tar -tvf %c
@@ -388,7 +388,6 @@ filextype */
 " for unknown file types.
 " For *nix:
 " filetype * xdg-open
-filetype * nvr --remote
 " For OS X:
 " filetype * open
 " For Windows:
@@ -429,7 +428,7 @@ nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
 " Open file in existing instance of gvim
-nnoremap o :!gvim --remote-tab-silent %f<cr>
+nnoremap o :!nvr %f<cr>
 " Open file in new instance of gvim
 nnoremap O :!gvim %f<cr>
 
