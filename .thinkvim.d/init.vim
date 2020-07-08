@@ -94,3 +94,13 @@ endfunction
 "wiki
 "Open today's diary page
 nnoremap <Leader>w<Leader>w :e ~/YaD/Notes/diary/`date +\%Y-\%m-\%d`.md<CR>
+
+function! SetDiffColors()
+    hi DiffAdd guifg=#b8bb26 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
+    hi DiffChange guifg=#8ec07c guibg=#282828 guisp=NONE gui=reverse cterm=reverse
+    hi DiffDelete guifg=#fb4934 guibg=#282828 guisp=NONE gui=reverse cterm=reverse
+    hi DiffText guifg=#fabd2f guibg=#282828 guisp=NONE gui=reverse cterm=reverse
+endfunction
+
+au BufEnter * if &diff | call SetDiffColors() |endif
+

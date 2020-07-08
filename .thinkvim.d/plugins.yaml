@@ -1,6 +1,5 @@
 # Disabling standart distribution ==============================================
 - { repo: hardcoreplayers/spaceline.vim, if: 0 }
-- { repo: hardcoreplayers/vim-buffet, if: 0 }
 - { repo: jreybert/vimagit, if: 0 }
 - { repo: rhysd/committia.vim, if: 0 }
 - { repo: mattn/emmet-vim, if: 0 }
@@ -20,13 +19,11 @@
 # - repo: vim-airline/vim-airline-themes
 #   hook_source: source $THINKVIM/configs/airline.vim
 
-- repo: itchyny/lightline.vim
-  on_event: [ BufReadPre,BufNew ]
-  hook_source: source $THINKVIM/configs/lightline.vim
+- repo: hardcoreplayers/vim-buffet
+  hook_source: source $THINKVIM/configs/buffet.vim
 
-- repo: mengelbrecht/lightline-bufferline
-  on_event: [ BufReadPre,BufNew ]
-  depends: lightline.vim
+- repo: itchyny/lightline.vim
+  hook_source: source $THINKVIM/configs/lightline.vim
 
 - repo: junegunn/fzf.vim
   hook_source: source $THINKVIM/configs/fzf.vim

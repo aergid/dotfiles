@@ -2,6 +2,7 @@
 """ lightline.vim {{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
+    \ 'enable' : { 'tabline': 0 },
     \ 'colorscheme': 'gruvbox_material',
   	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
@@ -14,21 +15,11 @@ let g:lightline = {
     \   'left': [ [ 'fname' ], ],
     \   'inactive': {
     \   },
-    \   'tabline': {
-    \     'left': [ [ 'buffers' ], ],
-    \   },
     \   'component': {
     \     'lineinfo': '%3p%%  %l/%-L',
     \     'fname': '%<%f',
     \   },
-    \   'component_expand': {
-    \     'buffers': 'lightline#bufferline#buffers',
-    \   },
-    \   'component_type': {
-    \     'buffers'          : 'tabsel',
-    \   },
     \   'component_function': {
-    \     'bufferinfo': 'lightline#buffer#bufferinfo',
     \     'currentfunction': 'CocCurrentFunction',
     \     'coc'      : 'StatusDiagnostic',
     \     'cocstatus': 'coc#status',
@@ -46,6 +37,7 @@ let g:lightline = {
     \   },
     \}
 
+
 let g:lightline.subseparator = { 'left': "|", 'right': "|" }
 
 " reloading the config
@@ -56,13 +48,6 @@ function! LightlineReload()
 endfunction
 
 command! LightlineReload call LightlineReload()
-
-let g:lightline#bufferline#enable_devicons   = 1
-let g:lightline#bufferline#filename_modifier = ':t'
-let g:lightline#bufferline#shorten_path      = 0
-let g:lightline#bufferline#show_number       = 1
-let g:lightline#bufferline#unicode_symbols   = 1
-let g:lightline#bufferline#unnamed           = 'NO NAME'
 
 function! LightlineModified()
     return &modified ? '●' : ''
