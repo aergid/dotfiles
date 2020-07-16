@@ -56,4 +56,4 @@ blueberry-tray &
 #run spotify &
 #run atom &
 run pamac-tray &
-run st tmux &
+(st tmux) &

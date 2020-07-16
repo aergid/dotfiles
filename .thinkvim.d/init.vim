@@ -104,3 +104,4 @@ endfunction
 
 au BufEnter * if &diff | call SetDiffColors() |endif
 
+command! -nargs=0 Review tab sball | tabdo Gvdiffsplit develop...HEAD
