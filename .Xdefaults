@@ -1,4 +1,5 @@
 ! для применения настроек в текущей сессии используйте `xrdb -load ~/.Xresources`
+*.alpha: 1
 
 !Xft.dpi: 180
 Xft.dpi: 96

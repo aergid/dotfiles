@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="/home/ksanteen/.local/bin:$PATH"
+export PATH="/home/${USER}/.local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ksanteen/.oh-my-zsh
+export ZSH=/home/${USER}/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=/home/ksanteen/dotfiles --work-tree=/home/ksanteen'
+alias dots='/usr/bin/git --git-dir=/home/${USER}/.dotfiles --work-tree=/home/${USER}'
 
 export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 
@@ -156,8 +156,7 @@ build_prompt() {
 }
 
 powerline-daemon -q
-source /home/$USER/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/powerline/bindings/zsh/powerline.zsh
 neofetch
 
 export KEYTIMEOUT=1
@@ -175,5 +174,8 @@ bindkey "^N" down-line-or-beginning-search
 # open Vim
 bindkey "^V" edit-command-line
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv virtualenv-init -)"

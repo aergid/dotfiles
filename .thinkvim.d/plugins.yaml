@@ -10,31 +10,37 @@
 #- repo: lifepillar/vim-gruvbox8
 # - repo: gruvbox-community/gruvbox
 - repo: sainnhe/gruvbox-material
-  hook_source: source $THINKVIM/configs/gruvbox_material.vim
+  hook_source: source /home/kondrashov/.thinkvim.d/configs/gruvbox_material.vim
 
 
 - repo: patstockwell/vim-monokai-tasty
 # UI ===========================================================================
 # - repo: vim-airline/vim-airline
 # - repo: vim-airline/vim-airline-themes
-#   hook_source: source $THINKVIM/configs/airline.vim
+#   hook_source: source /home/kondrashov/.thinkvim.d/configs/airline.vim
+
+- repo: sheerun/vim-polyglot
 
 - repo: hardcoreplayers/vim-buffet
-  hook_source: source $THINKVIM/configs/buffet.vim
+  hook_source: source /home/kondrashov/.thinkvim.d/configs/buffet.vim
 
 - repo: itchyny/lightline.vim
-  hook_source: source $THINKVIM/configs/lightline.vim
+  hook_source: source /home/kondrashov/.thinkvim.d/configs/lightline.vim
 
 - repo: junegunn/fzf.vim
-  hook_source: source $THINKVIM/configs/fzf.vim
+  hook_source: source /home/kondrashov/.thinkvim.d/configs/fzf.vim
 
+- repo: junegunn/fzf
+  depends: junegunn/fzf.vim
+  build: './install'
+  merged: 0
 
 - { repo: tpope/vim-surround, on_map: { n: ['ys', 'ds', 'cs'], v: 'S' } }
 
 # Navigation
 - { repo: christoomey/vim-tmux-navigator,
     on_map: { nt: ['<C-h>','<C-j>','<C-k>','<C-l>','<C-\\>'] },
-    hook_source: source $THINKVIM/configs/vim-tmux.vim
+    hook_source: source /home/kondrashov/.thinkvim.d/configs/vim-tmux.vim
   }
 
 - repo: junegunn/gv.vim
@@ -62,17 +68,17 @@
 
 - repo: plasticboy/vim-markdown
   on_ft: markdown
-  hook_add: source $THINKVIM/configs/markdown.vim
+  hook_add: source /home/kondrashov/.thinkvim.d/configs/markdown.vim
 
 - repo: rhysd/vim-gfm-syntax
   depends: vim-markdown
   on_ft: markdown
-  hook_add: source $THINKVIM/configs/markdown.vim
+  hook_add: source /home/kondrashov/.thinkvim.d/configs/markdown.vim
 
 - repo: iamcco/markdown-preview.nvim
   on_ft: [markdown,pandoc.markdown,rmd]
   build: 'sh -c "cd app & yarn install"'
-  hook_source: source $THINKVIM/configs/markdown.vim
+  hook_source: source /home/kondrashov/.thinkvim.d/configs/markdown.vim
 
 ## Toml support
 - { repo: cespare/vim-toml, on_ft: toml }
