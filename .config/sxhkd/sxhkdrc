@@ -4,11 +4,11 @@
 
 #Lock screen
 F12
-    slock
+    xflock4
 
 #Suspend
-F11
-    systemctl suspend
+# F11
+#     systemctl suspend
 
 #Whichkey
 alt + F4
@@ -273,15 +273,17 @@ super + shift + {1-9,0}
 
 #################################################################
 
+##Switch monitors
+XF86Display
+    /usr/local/bin/hotplug-monitor.sh
+
+##Switch monitors
+super + Tab
+    /usr/local/bin/hotplug-monitor.sh
 
 #Focus selected desktop
 alt + Tab
 	bspc desktop -f '^{1-9,10}'
-
-#Focus selected desktop
-super + Tab
-	bspc desktop -f '^{1-9,10}'
-
 
 # Focus next/previous window
 ctrl + alt + Left

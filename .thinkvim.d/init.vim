@@ -33,6 +33,13 @@ set signcolumn=yes
 " Help Vim recognize *.sbt and *.sc as Scala files
 au BufRead,BufNewFile *.sbt,*.sc set filetype=scala
 
+map ; :
+noremap ;; ;
+
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap <esc> <nop>
+
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)

@@ -17,6 +17,8 @@ xrandr --output DisplayPort-0 --mode 3840x2160  --same-as eDP
 
 eval "$(ssh-agent)"
 
+# run compton
+
 $HOME/.config/polybar/launch.sh &
 
 wmname LG3D &
