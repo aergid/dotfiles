@@ -13,6 +13,11 @@ M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 
 M.options = {
    relativenumber = true,
+   tabwidth = 0,
+   expandtab = true,
+   tabstop = 4,
+   shiftwidth = 4,
+   updatetime = 300 -- You will have a bad experience with diagnostic messages with the default 4000.
 }
 
 M.ui = {
@@ -36,4 +41,7 @@ M.plugins = {
    default_plugin_config_replace = {},
 }
 
+M.mappings = {
+ copy_whole_file = "<C-c>"
+}
 return M

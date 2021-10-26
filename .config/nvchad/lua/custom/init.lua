@@ -38,8 +38,8 @@ hooks.add("setup_mappings", function(map)
    map("n", ";;", ";", {noremap = true})
    
    -- Better indenting
-   map("v", "<", "<gv", {noremap = true})
-   map("v", ">", ">gv", {noremap = true})
+   -- map("v", "<", "<gv", {noremap = true})
+   -- map("v", ">", ">gv", {noremap = true})
 
    map("n", [[<Leader>w<Leader>w]], [[:e ~/YaD/Notes/diary/`date +\%Y-\%m-\%d`.md<CR>]], {noremap = true})
 end)
