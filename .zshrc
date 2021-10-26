@@ -68,6 +68,12 @@ setopt share_history
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+function zvm_config() {
+  ZVM_READKEY_ENGINE=$ZVM_READKEY_ENGINE_ZLE
+  ZVM_VI_ESCAPE_BINDKEY=jk
+  ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+}
+
 plugins=(
   git
   svn
@@ -75,10 +81,11 @@ plugins=(
   colorize # ccat, cless
   cp #cpv via rsyn with options
   docker
-  fzf
   pyenv
   shrink-path
   themes #lstheme theme at the go
+  fzf
+  zsh-vi-mode
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -138,13 +145,6 @@ prompt_svn() {
     fi
 }
 
-# Enable Ctrl-x-e to edit command line
-autoload -U edit-command-line
-# Emacs style
-zle -N edit-command-line
-bindkey '^xe' edit-command-line
-bindkey '^x^e' edit-command-line
-
 build_prompt() {
     RETVAL=$?
     prompt_status
@@ -161,21 +161,4 @@ neofetch
 
 export KEYTIMEOUT=1
 
-# Better searching in command mode
-bindkey -M vicmd '?' history-incremental-search-backward
-bindkey -M vicmd '/' history-incremental-search-forward
-
-# Beginning search with arrow keys
-bindkey "^[OA" up-line-or-beginning-search
-bindkey "^[OB" down-line-or-beginning-search
-bindkey "^P" up-line-or-beginning-search
-bindkey "^N" down-line-or-beginning-search
-
-# open Vim
-bindkey "^V" edit-command-line
-
-source /usr/share/doc/fzf/examples/completion.zsh
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv virtualenv-init -)"
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')

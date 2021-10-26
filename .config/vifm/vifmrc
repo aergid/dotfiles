@@ -514,4 +514,4 @@ nnoremap b :bmarks<cr>
 " various file names
 
 source ~/.config/vifm/devicons.vifm
-fileviewer * env -uCOLORTERM bat --color always --wrap never --pager never %c -p
+fileviewer * env -uCOLORTERM batcat --color always --wrap never --pager never %c -p

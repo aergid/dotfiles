@@ -43,9 +43,10 @@ alt + t
 #st dropbottom terminal
 alt + b
     tdrop -ma -x 10 -w -24 -y 1180 -p 'bspc rule -a St -o state=floating' -s dropdown st
-#st terminal
+
+#Thunar
 super + t
-    st
+    Thunar
 
 #Pavucontrol
 super + v
